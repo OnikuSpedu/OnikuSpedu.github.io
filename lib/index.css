@@ -50,6 +50,8 @@ a.nav-item-logo:hover {
 .card {
     width: 300px;
     text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .card:hover {
     transform: scale(1.05);
