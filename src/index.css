@@ -138,9 +138,14 @@ body {
 .header button {
   border: none;
   color: white;
-  background-color: #0085FF;
+  background-color: #0063c0;
   font-size: 16px;
-  padding: 10px;
+  padding: 12px;
+}
+
+.header button:hover {
+  color: black;
+  background-color: #AAD6FF;
 }
 
 .header form {
@@ -166,6 +171,7 @@ body {
 .header .scroll-down {
   color: #262626;
   font-weight: 300;
+  padding: 20px 0;
 }
 
 .header .scroll-down a {
@@ -175,6 +181,10 @@ body {
 .header a {
   text-decoration: none;
   color: black;
+}
+
+.header a:hover {
+  color: #0085FF;
 }
 
 .works {
@@ -209,20 +219,21 @@ body {
           flex-direction: column;
   background-color: #2493FA;
   margin-bottom: 1rem;
-  -webkit-animation: 1s ease 0s 1 fadein;
-          animation: 1s ease 0s 1 fadein;
+  -webkit-animation: 0.5s ease 0s 1 fadein;
+          animation: 0.5s ease 0s 1 fadein;
 }
 
 .works .work .work-title {
   font-size: 36px;
-  color: white;
+  color: black;
   font-weight: 900;
 }
 
 .works .work .work-desc {
   margin-top: 10px;
   margin-bottom: 15px;
-  color: white;
+  font-weight: 500;
+  color: #262626;
   font-size: 18px;
 }
 
@@ -232,11 +243,16 @@ body {
 
 .works .work .work-btns button {
   border: none;
-  background-color: #262626;
+  background-color: #0063c0;
   color: white;
   font-weight: 200;
   font-size: 16px;
-  padding: 6px 12px;
+  padding: 10px 12px;
+}
+
+.works .work .work-btns button:hover {
+  color: black;
+  background-color: #AAD6FF;
 }
 
 .works .work form {
@@ -291,6 +307,10 @@ body {
 .footer a {
   text-decoration: none;
   color: #2493FA;
+}
+
+.footer a:hover {
+  color: #AAD6FF;
 }
 
 @media only screen and (max-width: 375px) {

@@ -3,7 +3,7 @@ $font-stack: 'Roboto', sans-serif;
 $primary-blue: #0085FF;
 $light-blue: #2493FA;
 $lighter-blue: #AAD6FF;
-$dark-blue: #005AAD;
+$dark-blue: rgb(0, 99, 192);
 $light-black: #262626; 
 $background-gray: rgb(235, 235, 235);
 
@@ -65,6 +65,7 @@ body {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
 .header {
     background-color: white;
     min-height: 600px;
@@ -97,9 +98,13 @@ body {
     button {
         border: none;
         color: white;
-        background-color: $primary-blue;
+        background-color: $dark-blue;
         font-size: 16px;
-        padding: 10px;
+        padding: 12px;
+    }
+    button:hover {
+        color: black;
+        background-color: $lighter-blue;
     }
     form {
         display: inline;
@@ -119,6 +124,7 @@ body {
     .scroll-down {
         color: $light-black;
         font-weight: 300;
+        padding: 20px 0;
         a {
             font-size: 40px;
         }
@@ -126,6 +132,9 @@ body {
     a {
         text-decoration: none;
         color: black;
+    }
+    a:hover {
+        color: $primary-blue;
     }
 }
 .works {
@@ -149,27 +158,32 @@ body {
         flex-direction: column;
         background-color: $light-blue;
         margin-bottom: 1rem;
-        animation: 1s ease 0s 1 fadein;
+        animation: 0.5s ease 0s 1 fadein;
         .work-title {
             font-size: 36px;
-            color: white;
+            color: black;
             font-weight: 900;
         }
         .work-desc {
             margin-top: 10px;
             margin-bottom: 15px;
-            color: white;
+            font-weight: 500;
+            color: $light-black;
             font-size: 18px;
         }
         .work-btns{
             margin-top: auto;
             button {
                 border: none;
-                background-color: $light-black;
+                background-color: $dark-blue;
                 color: white;
                 font-weight: 200;
                 font-size: 16px;
-                padding: 6px 12px;
+                padding: 10px 12px;
+            }
+            button:hover {
+                color: black;
+                background-color: $lighter-blue;
             }
         }
         form {
@@ -218,6 +232,9 @@ body {
         text-decoration: none;
         color: $light-blue;
     }
+    a:hover {
+        color: $lighter-blue;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -244,3 +261,4 @@ body {
         }
     }
 }
+
