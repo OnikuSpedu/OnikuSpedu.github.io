@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+$font-stack: 'Roboto', sans-serif;
+$primary-blue: #0085FF;
+$light-blue: #2493FA;
+$lighter-blue: #AAD6FF;
+$dark-blue: #005AAD;
+$light-black: #262626; 
+$background-gray: rgb(235, 235, 235);
+
+body {
+    font-family: $font-stack;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: white;
+    min-height: 600px;
+    .name {
+        font-weight: 900;
+        font-size: 84px;
+    }
+    .header-desc {
+        font-size: 24px;
+        font-weight: 300;
+        max-width: 500px;
+    }
+    .header-buttons {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .socials {
+        display: block;
+        padding-top: 20px;
+        font-size: 25px;
+        > a {
+            margin-left: 15px;
+        }
+    }
+    button {
+        border: none;
+        color: white;
+        background-color: $primary-blue;
+        font-size: 16px;
+        padding: 10px;
+    }
+    form {
+        display: inline;
+    }
+    img.side-img {
+        max-width: 40vw;
+        height: auto;
+    }
+    img.top-img  {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 70vw;
+        height: auto;
+    }
+    .scroll-down {
+        color: $light-black;
+        font-weight: 300;
+        a {
+            font-size: 40px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+.works {
+    background-color: $primary-blue;
+    padding-bottom: 80px;
+    h2 {
+        padding: 60px;
+        font-size: 48px;
+        text-align: center;
+        i {
+            color: $lighter-blue;
+        }
+        span {
+            color: white;
+            font-weight: 900;
+        }
+    }
+    .work {
+        display: flex;
+        flex-direction: column;
+        background-color: $light-blue;
+        margin-bottom: 1rem;
+        .work-title {
+            font-size: 36px;
+            color: white;
+            font-weight: 900;
+        }
+        .work-desc {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            color: white;
+            font-size: 18px;
+        }
+        .work-btns{
+            margin-top: auto;
+            button {
+                border: none;
+                background-color: $light-black;
+                color: white;
+                font-weight: 200;
+                font-size: 16px;
+                padding: 6px 12px;
+            }
+        }
+        form {
+            display: inline;
+        }
+    }
+}
+
+.footer {
+    background-color: $light-black;
+    padding: 40px;
+    h2 {
+        padding: 40px;
+        font-size: 48px;
+        text-align: center;
+        i {
+            color: $lighter-blue;
+        }
+        span {
+            color: white;
+            font-weight: 900;
+        }
+    }
+    .name {
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+        color: white;
+    }
+    .email {
+        text-align: center;
+        font-weight: 300;
+        font-size: 18px;
+        color: white;
+    }
+    .socials {
+        text-align: center;
+        padding-top: 20px;
+        color: $light-blue;
+        font-size: 25px;
+        > a {
+            margin: 10px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $light-blue;
+    }
+}

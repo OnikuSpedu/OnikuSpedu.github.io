@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: white;
+  min-height: 600px;
+}
+
+.header .name {
+  font-weight: 900;
+  font-size: 84px;
+}
+
+.header .header-desc {
+  font-size: 24px;
+  font-weight: 300;
+  max-width: 500px;
+}
+
+.header .header-buttons {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.header .socials {
+  display: block;
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+.header .socials > a {
+  margin-left: 15px;
+}
+
+.header button {
+  border: none;
+  color: white;
+  background-color: #0085FF;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.header form {
+  display: inline;
+}
+
+.header img.side-img {
+  max-width: 40vw;
+  height: auto;
+}
+
+.header img.top-img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 70vw;
+  height: auto;
+}
+
+.header .scroll-down {
+  color: #262626;
+  font-weight: 300;
+}
+
+.header .scroll-down a {
+  font-size: 40px;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
+}
+
+.works {
+  background-color: #0085FF;
+  padding-bottom: 80px;
+}
+
+.works h2 {
+  padding: 60px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.works h2 i {
+  color: #AAD6FF;
+}
+
+.works h2 span {
+  color: white;
+  font-weight: 900;
+}
+
+.works .work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #2493FA;
+  margin-bottom: 1rem;
+}
+
+.works .work .work-title {
+  font-size: 36px;
+  color: white;
+  font-weight: 900;
+}
+
+.works .work .work-desc {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: white;
+  font-size: 18px;
+}
+
+.works .work .work-btns {
+  margin-top: auto;
+}
+
+.works .work .work-btns button {
+  border: none;
+  background-color: #262626;
+  color: white;
+  font-weight: 200;
+  font-size: 16px;
+  padding: 6px 12px;
+}
+
+.works .work form {
+  display: inline;
+}
+
+.footer {
+  background-color: #262626;
+  padding: 40px;
+}
+
+.footer h2 {
+  padding: 40px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.footer h2 i {
+  color: #AAD6FF;
+}
+
+.footer h2 span {
+  color: white;
+  font-weight: 900;
+}
+
+.footer .name {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+}
+
+.footer .email {
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  color: white;
+}
+
+.footer .socials {
+  text-align: center;
+  padding-top: 20px;
+  color: #2493FA;
+  font-size: 25px;
+}
+
+.footer .socials > a {
+  margin: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #2493FA;
+}
+/*# sourceMappingURL=index.css.map */
