@@ -10,6 +10,10 @@ body {
   min-height: 600px;
 }
 
+.header .info {
+  padding: 10px;
+}
+
 .header .name {
   font-weight: 900;
   font-size: 84px;
