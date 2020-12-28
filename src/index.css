@@ -5,6 +5,97 @@ body {
   padding: 0;
 }
 
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInFromRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInFromTop {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+
+/* Opera < 12.1 */
+
 .header {
   background-color: white;
   min-height: 600px;
@@ -12,6 +103,8 @@ body {
 
 .header .info {
   padding: 10px;
+  -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
+          animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 .header .name {
@@ -34,6 +127,8 @@ body {
   display: block;
   padding-top: 20px;
   font-size: 25px;
+  -webkit-animation: 1s ease-out 0s 1 slideInFromTop;
+          animation: 1s ease-out 0s 1 slideInFromTop;
 }
 
 .header .socials > a {
@@ -55,6 +150,8 @@ body {
 .header img.side-img {
   max-width: 40vw;
   height: auto;
+  -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
+          animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 .header img.top-img {
@@ -62,11 +159,17 @@ body {
   margin-bottom: 30px;
   width: 70vw;
   height: auto;
+  -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
+          animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 .header .scroll-down {
   color: #262626;
   font-weight: 300;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation: 1s ease-out 0s 1 fadein;
+          animation: 1s ease-out 0s 1 fadein;
 }
 
 .header .scroll-down a {
@@ -87,6 +190,8 @@ body {
   padding: 60px;
   font-size: 48px;
   text-align: center;
+  -webkit-animation: 1s ease 0s 1 fadein;
+          animation: 1s ease 0s 1 fadein;
 }
 
 .works h2 i {
@@ -108,6 +213,8 @@ body {
           flex-direction: column;
   background-color: #2493FA;
   margin-bottom: 1rem;
+  -webkit-animation: 1s ease 0s 1 fadein;
+          animation: 1s ease 0s 1 fadein;
 }
 
 .works .work .work-title {
