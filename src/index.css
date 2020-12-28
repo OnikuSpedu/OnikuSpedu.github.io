@@ -103,8 +103,8 @@ body {
 
 .header .info {
   padding: 10px;
-  -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
-          animation: 1s ease-out 0s 1 slideInFromLeft;
+  -webkit-animation: 0.5s ease-out 0s 1 slideInFromLeft;
+          animation: 0.5s ease-out 0s 1 slideInFromLeft;
 }
 
 .header .name {
@@ -127,8 +127,8 @@ body {
   display: block;
   padding-top: 20px;
   font-size: 25px;
-  -webkit-animation: 1s ease-out 0s 1 slideInFromTop;
-          animation: 1s ease-out 0s 1 slideInFromTop;
+  -webkit-animation: 0.5s ease-out 0s 1 slideInFromTop;
+          animation: 0.5s ease-out 0s 1 slideInFromTop;
 }
 
 .header .socials > a {
@@ -148,10 +148,10 @@ body {
 }
 
 .header img.side-img {
-  max-width: 40vw;
+  max-width: calc(75vw - 500px);
   height: auto;
-  -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
-          animation: 1s ease-out 0s 1 slideInFromLeft;
+  -webkit-animation: 0.5s ease-out 0s 1 slideInFromLeft;
+          animation: 0.5s ease-out 0s 1 slideInFromLeft;
 }
 
 .header img.top-img {
@@ -159,17 +159,13 @@ body {
   margin-bottom: 30px;
   width: 70vw;
   height: auto;
-  -webkit-animation: 1s ease-out 0s 1 slideInFromLeft;
-          animation: 1s ease-out 0s 1 slideInFromLeft;
+  -webkit-animation: 0.5s ease-out 0s 1 slideInFromLeft;
+          animation: 0.5s ease-out 0s 1 slideInFromLeft;
 }
 
 .header .scroll-down {
   color: #262626;
   font-weight: 300;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation: 1s ease-out 0s 1 fadein;
-          animation: 1s ease-out 0s 1 fadein;
 }
 
 .header .scroll-down a {
@@ -295,5 +291,22 @@ body {
 .footer a {
   text-decoration: none;
   color: #2493FA;
+}
+
+@media only screen and (max-width: 375px) {
+  .header .name {
+    font-size: 60px;
+  }
+  .works h2 {
+    font-size: 40px;
+    padding: 40px 0px;
+  }
+  .works .work .work-title {
+    font-size: 28px;
+  }
+  #contact h2 {
+    font-size: 40px;
+    padding: 40px 0px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
