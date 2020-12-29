@@ -175,7 +175,7 @@ body {
 }
 
 .header .scroll-down a {
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .header a {
@@ -226,14 +226,14 @@ body {
 .works .work .work-title {
   font-size: 36px;
   color: black;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .works .work .work-desc {
   margin-top: 10px;
   margin-bottom: 15px;
-  font-weight: 500;
-  color: #262626;
+  font-weight: 400;
+  color: black;
   font-size: 18px;
 }
 
